@@ -4,6 +4,16 @@ class LogicalSolver implements Solver {
   Puzzle original;
   int steps;
 
+  LogicalSolver(Puzzle puzzle) {
+    this.puzzle = puzzle.copy();
+    original = puzzle.copy();
+    steps = 0;
+  }
+
+  void display(float x, float y, float size) {
+    puzzle.display(x, y, size);
+  }
+
   void solveCell() {
     // TODO
   }
