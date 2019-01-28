@@ -4,4 +4,7 @@ interface Solver {
   void solvePuzzle();
   boolean isSolved();
   boolean isValid();
+  int getSteps();
+  boolean isUpdated();
+  Puzzle getPuzzle();
 }

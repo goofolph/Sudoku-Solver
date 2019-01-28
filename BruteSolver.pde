@@ -24,13 +24,23 @@ class BruteSolver implements Solver {
 
 
   boolean isSolved() {
-    // TODO
-    return false;
+    return puzzle.isSolved();
   }
 
 
   boolean isValid() {
-    // TODO
-    return false;
+    return puzzle.isValid();
+  }
+
+  int getSteps() {
+    return steps;
+  }
+
+  boolean isUpdated() {
+    return puzzle.updated;
+  }
+
+  Puzzle getPuzzle() {
+    return puzzle;
   }
 }

@@ -11,7 +11,9 @@ class LogicalSolver implements Solver {
   }
 
   void display(float x, float y, float size) {
-    puzzle.display(x, y, size);
+    if (puzzle.updated) {
+      puzzle.display(x, y, size);
+    }
   }
 
   void solveCell() {
@@ -32,5 +34,17 @@ class LogicalSolver implements Solver {
   boolean isValid() {
     // TODO
     return false;
+  }
+
+  int getSteps() {
+    return steps;
+  }
+
+  boolean isUpdated() {
+    return puzzle.updated;
+  }
+
+  Puzzle getPuzzle() {
+    return puzzle;
   }
 }
