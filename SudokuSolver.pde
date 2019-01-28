@@ -40,16 +40,16 @@ void setup() {
                      {0, 0, 8, 5, 0, 0, 0, 1, 0},
                      {0, 9, 0, 0, 0, 0, 4, 0, 0} };
 
-  puzzle = new Puzzle(puzMod);
+  puzzle = new Puzzle(puzImp);
   brute = new BruteSolver(puzzle);
   logic = new LogicalSolver(puzzle);
 }
 
 void draw() {
-  if (brute.isUpdated()) {
-    background(255);
-    brute.display(0, 0, size);
-    displayStats();
+  background(255);
+  brute.display(0, 0, size);
+  displayStats();
+  for (int i = 0; i < 10; i++) {
     brute.solveCell();
   }
 }
