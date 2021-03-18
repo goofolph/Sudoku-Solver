@@ -3,6 +3,7 @@ Puzzle puzzle2;
 Solver brute;
 Solver logic;
 float size;
+int cellsPerFrame = 60;
 
 void setup() {
   size(800, 540);
@@ -49,7 +50,7 @@ void draw() {
   background(255);
   brute.display(0, 0, size);
   displayStats();
-  for (int i = 0; i < 10; i++) {
+  for (int i = 0; i < cellsPerFrame; i++) {
     brute.solveCell();
   }
 }
