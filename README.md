@@ -6,7 +6,7 @@ This will run at 60 frames per second, attempting 60 edits per frame for a total
 
 ## Usage
 
-* Go to the [releases](https://github.com/goofolph/Sudoku-Solver/releases] page.
+* Go to the [releases](https://github.com/goofolph/Sudoku-Solver/releases) page.
 * Under Assets download a copy for your platform. 
 * Extract the archive.
 * Run SudokuSolver.exe
